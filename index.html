@@ -1,87 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Site</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dat's Portfolio</title>
 
-  <!-- Tailwind (giả sử bạn đang build bằng Vite) -->
-
-  <meta name="title" content="Dat's Site">
-  <meta name="description" content="Hi, my name is Dat Tran. I'm the Web Developer.">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-900 text-white">
 
-<!-- banner -->
-<section class="banner">
-  <div class="banner-container">
-    <h1 class="banner-title">
-      <span class="banner-text">
-        Hi, my name is <span class="text-teal-400">Tran Tien Dat</span>
-      </span>
-      <span class="banner-text">I'm the Web Developer.</span>
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center text-center px-6 bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')] bg-cover bg-center">
+  <div class="bg-black/60 p-10 rounded-xl">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+      <span class="block">Hi, my name is</span>
+      <span class="block text-teal-400">Tran Tien Dat</span>
+      <span class="block">I'm a Web Developer.</span>
     </h1>
 
-    <a href="#about-me" class="banner-cta">
-      <span class="banner-cta-text">Know more</span>
+    <a href="#about"
+       class="inline-block mt-6 border-2 border-teal-400 text-teal-400 px-6 py-2
+              hover:bg-teal-400 hover:text-black transition duration-300">
+      Know more
     </a>
   </div>
 </section>
-<!-- banner ./ -->
 
-<!-- about -->
-<section id="about-me" class="about">
-  <div class="about-container">
-    <h2 class="about-title">About Me</h2>
+<!-- ABOUT -->
+<section id="about" class="py-20 px-6 bg-teal-500 text-white">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-    <div class="about-grid">
-      <div class="about-avatar">
-        <img src="https://nguyenhuuquyen.com/imgs/avatar.png" alt="avatar">
-      </div>
+    <img src="https://nguyenhuuquyen.com/imgs/avatar.png"
+         class="w-60 mx-auto rounded-full shadow-lg">
 
-      <div class="about-content">
-        <p class="about-text">
-          I love programming, application development, and research software architecture...
-        </p>
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-center md:text-left">About Me</h2>
+      <p class="mb-6 text-center md:text-left">
+        I love programming, application development, and research software architecture.
+        My goal is to become a Senior Software Engineer.
+      </p>
 
-        <a href="#" class="about-cta">
-          <span>View My CV</span>
+      <div class="text-center md:text-left">
+        <a href="#"
+           class="inline-block border-2 border-white px-6 py-2
+                  hover:bg-white hover:text-teal-500 transition">
+          View My CV
         </a>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- contact -->
-<section id="contact" class="contact">
-  <div class="contact-container">
-    <h2 class="contact-title">Contact</h2>
+<!-- CONTACT -->
+<section class="py-20 text-center px-6 bg-gray-900">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Contact</h2>
 
-    <p class="contact-desc">
-      <span class="contact-highlight">I LOOK FORWARD TO WORKING WITH YOU</span>
-      <span>Let's connect for work</span>
+    <p class="text-gray-300 mb-6">
+      I LOOK FORWARD TO WORKING WITH YOU 🚀
     </p>
-  </div>
 
-  <a href="mailto:trandat868@gmail.com" class="contact-btn">
-    <span>Send An Email Now</span>
-  </a>
+    <a href="mailto:trandat868@gmail.com"
+       class="inline-block border-2 border-teal-400 text-teal-400 px-6 py-2
+              hover:bg-teal-400 hover:text-black transition">
+      Send Email
+    </a>
+  </div>
 </section>
 
-<!-- footer -->
-<footer class="footer">
-  <div class="footer-container">
-
-    <ul class="footer-social">
-      <li><img src="/imgs/twitter.svg" /></li>
-      <li><img src="/imgs/linkedin.svg" /></li>
-      <li><img src="/imgs/github.svg" /></li>
-    </ul>
-
-    <hr class="footer-line"/>
-    <p class="footer-name">Tran Tien Dat</p>
+<!-- FOOTER -->
+<footer class="bg-gray-800 py-10 text-center">
+  <div class="flex justify-center gap-6 mb-4">
+    <a href="#" class="hover:-translate-y-2 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-8 grayscale hover:grayscale-0">
+    </a>
+    <a href="#" class="hover:-translate-y-2 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-8 grayscale hover:grayscale-0">
+    </a>
+    <a href="#" class="hover:-translate-y-2 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" class="w-8 grayscale hover:grayscale-0">
+    </a>
   </div>
+
+  <p class="text-gray-400">© 2026 - Tran Tien Dat</p>
 </footer>
 
 </body>
